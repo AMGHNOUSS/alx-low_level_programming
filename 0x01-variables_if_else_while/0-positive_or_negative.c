@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - main function -> check if a  number is >0 or <0
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
