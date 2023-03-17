@@ -17,6 +17,7 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
+				putchar(k);
 				if (i == '7' && j == '8' && k == '9')
 					break;
 				putchar(',');
