@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (j = '0'; j <= '8'; j++)
 		{
-			for (k = i + 1; k <= '9'; k++)
+			for (k = 0; k <= '9'; k++)
 			{
 				for (x = j + 1; x <= '9'; x++ )
 				{
