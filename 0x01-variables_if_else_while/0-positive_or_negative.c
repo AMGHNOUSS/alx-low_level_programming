@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - main function -> check if a  number is >0 or <0
-*
-*Return: return 0 every-time
-*/
+ * main - main function -> check if a  number is >0 or <0
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
