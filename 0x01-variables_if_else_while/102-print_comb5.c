@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	int i, j, k, x;
+	int i, j, k, x, num;
 
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -17,6 +17,7 @@ int main(void)
 			{
 				for (x = '0'; x <= '9'; x++)
 				{
+					num  = i * 1000 + j * 100 + k * 10 + x;
 					if (i * 10 + j < k * 10 + x)
 					{
 						putchar(i);
@@ -24,7 +25,7 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(x);
-						if ((i * 1000 + j * 100 + k * 10 + x) == '9899')
+						if (num == '9899')
 							break;
 						putchar(',');
 						putchar(' ');
