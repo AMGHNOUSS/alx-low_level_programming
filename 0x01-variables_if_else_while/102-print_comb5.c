@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i, j, k, x;
-	
+
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
@@ -20,16 +20,16 @@ int main(void)
 				{
 					if (i * 10 + j < k * 10 + x)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(x);
-						if (!(i == '9' && j == '8' && k == '9' && x == '9'))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(x);
+					if (!(i == '9' && j == '8' && k == '9' && x == '9'))
+					{
+					putchar(',');
+					putchar(' ');
+					}
 					}
 				}
 			}
