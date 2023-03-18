@@ -24,11 +24,11 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(x);
+						if(i == '9' && j == '8' && k == '9'  && x == '9')
+							break;
+						putchar(',');
+						putchar(' ');
 					}
-					if(i == '9' && j == '8' && k == '9'  && x == '9')
-						break;
-					putchar(',');
-					putchar(' ');
 				}
 			}
 		}
