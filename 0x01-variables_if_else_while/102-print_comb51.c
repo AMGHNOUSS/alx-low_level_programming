@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
- * main - Print all possible different combinations of two two-digit
- *
- * Return: Always 0 (Success)
- */
+* main - Print all possible different combinations of two two-digit
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int i, j, k, x;
@@ -26,10 +25,7 @@ int main(void)
 						putchar(k);
 						putchar(x);
 						if (i == '9' && j == '8' && k == '9' && x == '9')
-						{
-							putchar('\n');
-							return(0);
-						}
+							break;
 						putchar(',');
 						putchar(' ');
 					}
