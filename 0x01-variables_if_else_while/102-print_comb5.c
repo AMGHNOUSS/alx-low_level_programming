@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, j, k, x;
 
-	for (i = '0'; i <= '9'; i++)
+	(for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '8'; j++)
 		{
@@ -17,7 +17,7 @@ int main(void)
 			{
 				for (x = '0'; x <= '9'; x++)
 				{
-					if (i + j < k + x)
+					if ((i * 10) + j < (k * 10) + x)
 					{
 						putchar(i);
 						putchar(j);
