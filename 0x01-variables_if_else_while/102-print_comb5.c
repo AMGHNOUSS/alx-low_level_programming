@@ -25,7 +25,7 @@ int main(void)
 						putchar(k);
 						putchar(x);
 					}
-					if (i * 1000 + j * 100 + k * 10 + x == '9899')
+					if(i == '9' && j == '8' && k == '9'  && x == '9')
 						break;
 					putchar(',');
 					putchar(' ');
