@@ -25,6 +25,8 @@ int main(void)
 						putchar(k);
 						putchar(x);
 					}
+					if (i * 1000 + j * 100 + k * 10 + x == '9899')
+						break;
 					putchar(',');
 					putchar(' ');
 				}
