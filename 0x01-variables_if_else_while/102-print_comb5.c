@@ -24,11 +24,9 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(x);
-						if (i == '9')
+						if (i == k == x == '9')
 							if (j == '8')
-								if (k == '9')
-									if (x == '9')
-										break;
+								break;
 						putchar(',');
 						putchar(' ');
 					}
