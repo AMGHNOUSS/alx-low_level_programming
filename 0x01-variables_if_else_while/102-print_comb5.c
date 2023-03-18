@@ -7,17 +7,16 @@
 */
 int main(void)
 {
-	int i, j, k, x, num;
+	int i, j, k, x;
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = '0'; j <= '8'; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
 			for (k = '0'; k <= '9'; k++)
 			{
 				for (x = '0'; x <= '9'; x++)
 				{
-					num = i * 1000 + j * 100 + k * 10 + x;
 					if (i * 10 + j < k * 10 + x)
 					{
 						putchar(i);
@@ -25,8 +24,11 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(x);
-						if (num == '9899')
-							break;
+						if (i == '9')
+							if (j == '8')
+								if (k == '9')
+									if(x == '9')
+										break;
 						putchar(',');
 						putchar(' ');
 					}
