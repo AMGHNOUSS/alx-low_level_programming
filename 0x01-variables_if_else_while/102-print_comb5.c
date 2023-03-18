@@ -17,7 +17,7 @@ int main(void)
 			{
 				for (x = '0'; x <= '9'; x++)
 				{
-					if ((i * 10) + j < (k * 10) + x)
+					if (i * 10 + j < k * 10 + x)
 					{
 						putchar(i);
 						putchar(j);
