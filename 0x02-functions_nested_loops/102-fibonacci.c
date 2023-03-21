@@ -13,7 +13,7 @@ int main(void)
 	i = 1;
 	j = 2;
 	printf("%lu, %lu, ", i, j);
-	while (comp <= 50)
+	while (comp <= 51)
 	{
 		comp++;
 		chng = i + j;
