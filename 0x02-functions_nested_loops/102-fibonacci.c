@@ -9,11 +9,11 @@ int main(void)
 	unsigned long int i, j, chng;
 	int comp;
 
-	comp = 0;
+	comp = 1;
 	i = 1;
 	j = 2;
 	printf("%lu, %lu, ", i, j);
-	while (comp <= 51)
+	while (comp <= 50)
 	{
 		comp++;
 		chng = i + j;
