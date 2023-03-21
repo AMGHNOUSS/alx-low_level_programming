@@ -21,10 +21,10 @@ void times_table(void)
 			}
 			else if (j == 9)
 			{
-				if(res > 9)
+				if(res > 10)
 				{
-				_putchar(res/10 + '0');
-				_putchar(res%10 + '0');
+					_putchar(res/10 + '0');
+					_putchar(res%10 + '0');
 				}
 				else
 				{
