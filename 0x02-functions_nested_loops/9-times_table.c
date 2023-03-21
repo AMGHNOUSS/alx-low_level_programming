@@ -34,14 +34,17 @@ void times_table(void)
 			}
 			else 
 			{
-				_putchar(' ');
-				_putchar(res + '0');
-				_putchar(',');
-				_putchar(' ');
-				if (res > 9)
+				if (res >= 10)
 				{
 					_putchar(res/10 + '0');
 					_putchar(res%10 + '0');
+					_putchar(',');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(res + '0');
+					_putchar(',');
 				}
 			}
 		}
