@@ -19,11 +19,12 @@ int main(void)
 		chng = i + j;
 		i = j;
 		j = chng;
-		if ( comp == 50)
+		if (comp == 50)
 		{
 			printf("%lu", i);
 			break;
-		}printf("%lu, ", i);
+		}
+		printf("%lu, ", i);
 	}
 	printf("\n");
 	return (0);
