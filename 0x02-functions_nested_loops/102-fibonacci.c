@@ -6,7 +6,9 @@
  */
 int main(void)
 {
-	long int i, j, comp, chng;
+	unsigned long int i, j, chng;
+	int comp;
+
 	comp = 0;
 	i = 1;
 	j = 2;
