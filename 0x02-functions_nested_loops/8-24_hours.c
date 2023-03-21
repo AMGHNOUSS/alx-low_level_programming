@@ -2,7 +2,7 @@
 /**
  * jack_bauer - Print every minute of the day of JAck Bauer
  *
- * Return: 0 (Success)
+ * Return:  (Success)
  */
 void jack_bauer(void)
 {
@@ -28,5 +28,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-	return (0);
 }
