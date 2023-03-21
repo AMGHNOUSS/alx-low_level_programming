@@ -16,14 +16,14 @@ void jack_bauer(void)
 			{
 				for (x = 0; x <= 9; x++)
 				{
+					if (i == 2 && j == 4)
+						break;
 					_putchar(i + '0');
 					_putchar(j + '0');
 					_putchar(':');
 					_putchar(k + '0');
 					_putchar(x + '0');
 					_putchar('\n');
-					if (i == 2 && j == 3 && j == 5 && x == 9)
-					break;
 				}
 			}
 		}
