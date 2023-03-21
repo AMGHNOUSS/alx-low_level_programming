@@ -12,14 +12,14 @@ int main(void)
 	comp = 0;
 	i = 1;
 	j = 2;
-	printf("%d, %d, ", i, j);
+	printf("%lu, %lu, ", i, j);
 	while (comp < 50)
 	{
 		comp++;
 		num = i + j;
 		i = j;
 		j = num;
-		printf("%d, ", i);
+		printf("%lu, ", i);
 	}
 	printf("\n");
 	return (0);
