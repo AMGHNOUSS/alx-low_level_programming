@@ -16,9 +16,9 @@ int main(void)
 	while (comp < 50)
 	{
 		comp++;
-		num = i + j;
+		chng = i + j;
 		i = j;
-		j = num;
+		j = chng;
 		printf("%lu, ", i);
 	}
 	printf("\n");
