@@ -12,7 +12,7 @@ int main(void)
 	comp = 1;
 	i = 1;
 	j = 2;
-	printf("%lu, %lu, ", i, j);
+	printf("%lu, ", i);
 	while (comp <= 50)
 	{
 		comp++;
