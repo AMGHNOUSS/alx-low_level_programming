@@ -13,13 +13,17 @@ int main(void)
 	i = 1;
 	j = 2;
 	printf("%lu, %lu, ", i, j);
-	while (comp < 50)
+	while (comp <= 50)
 	{
 		comp++;
 		chng = i + j;
 		i = j;
 		j = chng;
-		printf("%lu, ", i);
+		if ( comp == 50)
+		{
+			printf("%lu", i);
+			break;
+		}printf("%lu, ", i);
 	}
 	printf("\n");
 	return (0);
