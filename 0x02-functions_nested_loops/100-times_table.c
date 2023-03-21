@@ -15,6 +15,7 @@ void print_times_table(int n)
 		{
 			_putchar(44);
 			_putchar(32);
+			_putchar(32);
 			res = i * j;
 			if (res >= 10)
 			{
@@ -23,6 +24,7 @@ void print_times_table(int n)
 			}
 			else
 			{
+				_putchar(32);
 				_putchar(32);
 				_putchar(res + 48);
 			}
