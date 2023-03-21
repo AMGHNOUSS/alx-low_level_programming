@@ -19,7 +19,7 @@ int main(void)
 		i = j;
 		j = chng;
 		if (i % 2 == 0)
-			printf("%lu", i);
+			printf("%lu, ", i);
 	}
 	printf("\n");
 	return (0);
