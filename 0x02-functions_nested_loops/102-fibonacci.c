@@ -10,14 +10,15 @@ int main(void)
 
 	comp = 0;
 	i = 1;
-	j = 0;
+	j = 2;
+	printf("%d, %d, ", i, j)
 	while (comp < 50)
 	{
-		printf("%d, ", i);
 		comp++;
-		chng = i;
+		num = i + j;
 		i = j;
-		j = i;
+		j = num;
+		printf("%d, ", i)
 	}
 	printf("\n");
 	return (0);
