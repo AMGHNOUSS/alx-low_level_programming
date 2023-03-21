@@ -6,19 +6,18 @@
  */
 int main(void)
 {
-	int i, j, comp, chng;
-
+	long int i, j, comp, chng;
 	comp = 0;
 	i = 1;
 	j = 2;
-	printf("%d, %d, ", i, j)
+	printf("%d, %d, ", i, j);
 	while (comp < 50)
 	{
 		comp++;
 		num = i + j;
 		i = j;
 		j = num;
-		printf("%d, ", i)
+		printf("%d, ", i);
 	}
 	printf("\n");
 	return (0);
