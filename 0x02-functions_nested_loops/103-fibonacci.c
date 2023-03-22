@@ -8,7 +8,6 @@ int main(void)
 {
 	unsigned long int i, j, chng;
 
-	comp = 1;
 	i = 1;
 	j = 2;
 	while (i <= 4000000)
