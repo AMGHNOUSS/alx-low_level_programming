@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int i, j, k, sum;
+	unsigned long int i, j, k, sum;
 
 	i = 0;
-	j = 1;
-	k = 0;
+	j = 0;
+	k = 1;
 	sum = 0;
 	while (i <= 4000000)
 	{
-		k = i + j;
-		i = j;
-		j = i;
+		i = j + k;
+		j = k;
+		k = i;
 		if(i % 2 == 0)
 			sum += i;
 	}
