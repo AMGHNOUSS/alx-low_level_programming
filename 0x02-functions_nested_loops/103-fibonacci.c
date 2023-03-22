@@ -17,7 +17,7 @@ int main(void)
 		i = j + k;
 		j = k;
 		k = i;
-		if(i % 2 == 0)
+		if (i % 2 == 0)
 			sum += i;
 	}
 	printf("%lu\n", sum);
