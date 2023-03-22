@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	float i, j, chng;
+	double i, j, chng;
 	int comp;
 
 	comp = 1;
@@ -21,10 +21,10 @@ int main(void)
 		j = chng;
 		if (comp == 98)
 		{
-			printf("%.0f", i);
+			printf("%.0g", i);
 			break;
 		}
-		printf("%.0f, ", i);
+		printf("%.0g, ", i);
 	}
 	printf("\n");
 	return (0);
