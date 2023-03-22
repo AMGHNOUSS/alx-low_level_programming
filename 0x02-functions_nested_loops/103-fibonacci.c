@@ -7,20 +7,19 @@
 int main(void)
 {
 	unsigned long int i, j, chng;
-	int comp;
 
 	comp = 1;
 	i = 1;
 	j = 2;
-	while (comp <= 50)
+	while (i <= 4000000)
 	{
-		comp++;
-		chng = i + j;
-		i = j;
-		j = chng;
 		if (i % 2 == 0)
-			printf("%lu, ", i);
+		{
+			chng = i + j;
+			i = j;
+			j = chng;
+		}
 	}
-	printf("\n");
+	printf("%lu\n", i);
 	return (0);
 }
