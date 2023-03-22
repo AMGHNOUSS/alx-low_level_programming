@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- *main - Print the first 50 Fibonacci numbers, starting with 1 and 2.
+ *main - Print the first 98 Fibonacci numbers, starting with 1 and 2.
  *
  *Return: Always 0 (Success)
  */
 int main(void)
 {
-	unsigned long int i, j, chng;
+	float i, j, chng;
 	int comp;
 
 	comp = 1;
 	i = 1;
 	j = 2;
-	printf("%lu, ", i);
+	printf("%.0f, ", i);
 	while (comp <= 91)
 	{
 		comp++;
@@ -21,10 +21,10 @@ int main(void)
 		j = chng;
 		if (comp == 98)
 		{
-			printf("%lu", i);
+			printf("%.0f", i);
 			break;
 		}
-		printf("%lu, ", i);
+		printf("%.0f, ", i);
 	}
 	printf("\n");
 	return (0);
