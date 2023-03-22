@@ -21,10 +21,10 @@ int main(void)
 		j = chng;
 		if (comp == 98)
 		{
-			printf("%.0g", i);
+			printf("%.0f", i);
 			break;
 		}
-		printf("%.0g, ", i);
+		printf("%.0f, ", i);
 	}
 	printf("\n");
 	return (0);
