@@ -13,7 +13,7 @@ int main(void)
 	i = 1;
 	j = 2;
 	printf("%.0f, ", i);
-	while (comp <= 91)
+	while (comp <= 98)
 	{
 		comp++;
 		chng = i + j;
