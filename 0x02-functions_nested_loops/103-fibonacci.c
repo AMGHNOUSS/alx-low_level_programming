@@ -6,19 +6,20 @@
  */
 int main(void)
 {
-	unsigned long int i, j, chng;
+	unsigned long int i, j, k, sum;
 
-	i = 1;
-	j = 2;
+	i = 0;
+	j = 1;
+	k = 0;
+	sum = 0;
 	while (i <= 4000000)
 	{
-		if (i % 2 == 0)
-		{
-			chng = i + j;
-			i = j;
-			j = chng;
-		}
+		k = i + j;
+		i = j;
+		j = i;
+		if(i % 2 == 0)
+			sum += i;
 	}
-	printf("%lu\n", i);
+	printf("%lu\n", sum);
 	return (0);
 }
