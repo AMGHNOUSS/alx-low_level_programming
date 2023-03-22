@@ -19,7 +19,7 @@ int main(void)
 		chng = i + j;
 		i = j;
 		j = chng;
-		if (comp == 50)
+		if (comp == 98)
 		{
 			printf("%lu", i);
 			break;
