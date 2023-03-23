@@ -4,7 +4,7 @@
  * @size: integer
  * Return: Nothing
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i, j, s;
 
