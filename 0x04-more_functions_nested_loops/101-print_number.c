@@ -6,34 +6,35 @@
  */
 void print_number(int n)
 {
-	int i, num, num1, count;
+	int i, num, num1 = 1, count = 0;
 
-	num1 = 1;
-	count = 0;
 	num = n;
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
-	else if (n == 0)
+	if (n == 0)
 		_putchar(48);
-	while (num != 0)
+	else
 	{
-		num /= 10;
-		count++;
-	}
-	for (i = 1; i < count; i++)
-		num1 = num1 * 10;
-	for (i = 1; i <= count; i++)
-	{
-		if (num != 1)
+		if (n < 0)
 		{
-			_putchar(n / num1 + '0');
-			n = n % num1;
-			num1 /= 10;
+			_putchar('-');
+			n = -n;
 		}
-		else
-			_putchar(n % 10 + '0');
+		while (num != 0)
+		{
+			num /= 10;
+			count++;
+		}
+		for (i = 1; i < count; i++)
+			num1 = num1 * 10;
+		for (i = 1; i <= count; i++)
+		{
+			if (num != 1)
+			{
+				_putchar(n / num1 + '0');
+				n = n % num1;
+				num1 /= 10;
+			}
+			else
+				_putchar(n % 10 + '0');
+		}
 	}
 }
