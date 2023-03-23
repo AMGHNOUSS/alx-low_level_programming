@@ -3,7 +3,7 @@
  * main - Fizz-Buzz
  * Return : Always 0 (Success)
  */
-int main(void)
+int main()
 {
 	int i;
 
