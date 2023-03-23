@@ -27,7 +27,7 @@ void print_number(int n)
 			num1 = num1 * 10;
 		for (i = 1; i <= count; i++)
 		{
-			if (num != 1)
+			if (num1 != 1)
 			{
 				_putchar(n / num1 + '0');
 				n = n % num1;
