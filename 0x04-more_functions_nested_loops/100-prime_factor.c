@@ -15,6 +15,6 @@ int main(void)
 			res = j;
 		}
 	}
-	printf("%lu", res);
+	printf("%lu\n", res);
 	return (0);
 }
