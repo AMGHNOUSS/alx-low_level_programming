@@ -6,10 +6,9 @@
  */
 void print_number(int n)
 {
-	int i, num1 = 1, count = 0;
+	int i, num1 = 1, count = 0, num;
 
-	unsigned int num = n;
-
+	num = n;
 	if (n == 0)
 		_putchar(48);
 	else
