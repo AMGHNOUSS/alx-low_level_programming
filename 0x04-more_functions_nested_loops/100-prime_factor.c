@@ -5,16 +5,16 @@
  */
 int main(void)
 {
-	unsigned long int n = 600, i, j, count = 0, res;
+	unsigned long int n = 612852475143, j, res;
 
-	for (i = 1; i < n / 2; i++)
+	for (j = 2; j <= n; j++)
 	{
-		count = 0;
-		for (j = 1; j <= i; j++)
-			if (i % j == 0)
-				count++;
-		if (count == 2)
+		if (n % j == 0)
+		{
+			n = n / j;
 			res = i;
+		}
 	}
-	return (res);
+	printf("%lu", res);
+	return (0);
 }
