@@ -12,7 +12,7 @@ int main(void)
 		if (n % j == 0)
 		{
 			n = n / j;
-			res = i;
+			res = j;
 		}
 	}
 	printf("%lu", res);
