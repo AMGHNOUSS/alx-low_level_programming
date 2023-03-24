@@ -6,9 +6,10 @@
  */
 void print_number(int n)
 {
-	int i, num1 = 1, count = 0, num;
+	int i, num1 = 1, count = 0, num, num2;
 
 	num = n;
+	num2 = n;
 	if (n == 0)
 		_putchar(48);
 	else
@@ -16,7 +17,7 @@ void print_number(int n)
 		if (n < 0)
 		{
 			_putchar('-');
-			n = -n;
+			num2 = -num2;
 		}
 		while (num != 0)
 		{
@@ -29,12 +30,12 @@ void print_number(int n)
 		{
 			if (num1 != 1)
 			{
-				_putchar(n / num1 + '0');
-				n = n % num1;
+				_putchar(num2 / num1 + '0');
+				num2 = num2 % num1;
 				num1 /= 10;
 			}
 			else
-				_putchar(n % 10 + '0');
+				_putchar(num2 % 10 + '0');
 		}
 	}
 }
