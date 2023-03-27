@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * resst_to_98 - Change Value
+ * reset_to_98 - Change Value
  * @n: integer
  * Return: Just printf
  */
