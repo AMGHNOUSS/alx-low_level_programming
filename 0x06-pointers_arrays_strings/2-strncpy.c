@@ -9,7 +9,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int cmp = 0, i = 0;
-	
+
 	while (*(dest + cmp) != '\0')
 		cmp++;
 	for (i = 0; *(src + i) != '\0' && i < n; i++)
