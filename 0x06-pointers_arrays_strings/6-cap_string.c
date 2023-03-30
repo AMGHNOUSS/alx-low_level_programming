@@ -1,15 +1,18 @@
 #include "main.h"
 /**
- * String_toupper - changes all lowercase letters of a string to uppercase.
- * @a: char
- * Return: Nothings
+ * cap_string - capitalizes all words of a string.
+ * @a: string
+ * Return: string
  */
 char *string_toupper(char *a)
 {
-	int i;
+	int i, j;
+	char bb[] = {',',';','.','!','?','"','(',')','{','}',' ','\t','\n'};
 
 	for (i = 0; *(a + i); i++)
-		if (*(a + i) > 96 && *(a + i) < 123)
-			*(a + i) = *(a + i) - 32;
+		for (j = 0; bb[j] != '\0';j++)
+			if (*(a + i) == bb[j])
+				if (*(a + i) >= 65 && *(a + i) <= 122)
+					*(a + i + 1) = *(a + i + 1) - 32;
 	return (a);
 }
