@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 		cmp1++;
 	while (*(s2 + cmp) != '\0')
 		cmp2++;
-	if (cmp1 <= cmp2 )
+	if (cmp1 <= cmp2)
 		cmp1 = cmp2;
 	for (i = 0; i < cmp1; i++)
 	{
