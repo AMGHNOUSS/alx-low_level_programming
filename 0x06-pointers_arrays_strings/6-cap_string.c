@@ -4,16 +4,25 @@
  * @a: string
  * Return: string
  */
-char *string_toupper(char *a)
+char *cap_string(char *a)
 {
 	int i, j;
-	char bb[] = {',',';','.','!','?','"','(',')','{','}',' ','\t','\n'}, *b;
+	char bb[] = {9,10,32,33,34,40,41,44,46,59,63,123,125};
+	char *b;
 
 	b = bb;
 	for (i = 0; *(a + i); i++)
-		for (j = 0; *(b + j);j++)
+	{	for (j = 0; *(b + j); j++)
+		{	
 			if (*(a + i) == *(b + j))
-				if (*(a + i) >= 65 && *(a + i) <= 122)
+			{	
+				if (*(a + i + 1) > 96 && *(a + i + 1) < 123)
+				{
 					*(a + i + 1) = *(a + i + 1) - 32;
+					break;
+				}
+			}
+		}
+	}
 	return (a);
 }
