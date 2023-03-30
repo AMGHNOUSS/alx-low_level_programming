@@ -6,18 +6,12 @@
  */
 char *leet(char *a)
 {
-	int i;
+	int i, j;
+	char tab1[] = {97, 101, 108, 111, 116}, tab2[] = {52, 51, 49, 48, 55};
 
 	for (i = 0; *(a + i); i++)
-		if (*(a + i) == 65 || *(a + i) == 97)
-			*(a + i) = 52;
-		else if (*(a + i) == 69 || *(a + i) == 101)
-			*(a + i) = 51;
-		else if (*(a + i) == 79 || *(a + i) == 111)
-			*(a + i) = 48;
-		else if (*(a + i) == 76 || *(a + i) == 108)
-			*(a + i) = 49;
-		else if (*(a + i) == 84 || *(a + i) == 116)
-			*(a + i) = 55;
+		for (j = 0; j < 5; j++)
+			if (*(a + i) == tab1[j] || *(a + i) == tab1[j] - 32)
+				*(a + i) = tab2[j];
 	return (a);
 }
