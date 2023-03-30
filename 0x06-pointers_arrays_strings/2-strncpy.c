@@ -10,9 +10,9 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int cmp = 0, i = 0;
 
-	while (*(dest + cmp) != '\0')
+	while (*(src + cmp) != '\0')
 		cmp++;
-	for (i = 0; *(src + i) != '\0' && i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i < cmp)
 			*(dest + i) = *(src + i);
