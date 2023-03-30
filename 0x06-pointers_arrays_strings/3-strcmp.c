@@ -17,16 +17,11 @@ int _strcmp(char *s1, char *s2)
 		cmp1 = cmp2;
 	for (i = 0; i < cmp1; i++)
 	{
+		r = *(s1 + i) - *(s2 + i);
 		if (*(s1 + i) < *(s2 + i))
-		{
-			r = *(s1 + i) - *(s2 + i);
 			return (r);
-		}
 		else if (*(s1 + i) > *(s2 + i))
-		{
-			r = *(s1 + i) - *(s2 + i);
 			return (r);
-		}
 	}
 	return (0);
 }
