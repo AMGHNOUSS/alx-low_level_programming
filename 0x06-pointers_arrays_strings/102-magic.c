@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/*
+ * main - change value a[2] to 98.
+ * Reurn: 0
+ */
 int main(void)
 {
 	int n;
