@@ -7,9 +7,9 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int cmp = 1;
-
+	unsigned int cmp = 0;
 	int i;
+
 	while (*accept)
 	{
 		for (i = 0; *(s + i); i++)
@@ -22,5 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		accept++;
 	}
+	if (*accept == '\0')
+		cmp++;
 	return (cmp);
 }
