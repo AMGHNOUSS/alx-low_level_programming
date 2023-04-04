@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_chessdiagsums - prints the sum of the two diagonals of a square matrix of integers.
+ * print_diagsums - two diagonals of a square matrix of integers.
  * @a: integer
  * @size: integer
  * Return: Nothings
@@ -13,13 +13,13 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		sum1 += a[i];
-		a += size; 
+		a += size;
 	}
 	a -= size;
 	for (i = 0; i < size; i++)
 	{
 		sum2 += a[i];
-		a -=size;
+		a -= size;
 	}
 	printf("%d, %d\n", sum1, sum2);
 }
