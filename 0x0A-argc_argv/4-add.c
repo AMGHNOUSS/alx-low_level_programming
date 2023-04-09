@@ -4,7 +4,7 @@
  * main - Add numbers positive.
  * @argc: integer
  * @argv: String
- * Return: Always 0
+ * Return: on success 0 and 1 on fail
  */
 int main(int argc, char *argv[])
 {
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 1; argv[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] < '0' && argv[i][j] > '9')
 			{
