@@ -8,20 +8,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int res = 0, i;
+	int res = 0, i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]))
+		for (j = 1; argv[i][j] != '\0'; j++)
 		{
-			if (atoi(argv[i]) > 0)
-			res += atoi(argv[i]);
+			if (argv[i][j] < '0' && argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		res += atoi(argv[i]);
 	}
 	printf("%d\n", res);
 	return (0);
