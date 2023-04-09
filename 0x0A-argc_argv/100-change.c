@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else if (atoi(argv[1]) > 0)
+	else if (atoi(argv[1]) >= 0)
 	{
 		sum = atoi(argv[1]);
 		while (sum != 0)
