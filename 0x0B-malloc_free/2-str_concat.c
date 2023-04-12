@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * _str_concat - concatenates two strings.
+ * str_concat - concatenates two strings.
  * @s1: String
  * @s2: String
  * Return: null if size = 0 or String
@@ -8,18 +8,20 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int j = 0,i = 0, len_s1 = 0, len_s2 = 0;
+	int j = 0, i = 0, len_s1 = 0, len_s2 = 0;
 
-	if (!s1)
-		return (s2);
-	else if (!s2)
-		return (s1);
-	while (*(s1 + len_s1))
-		len_s1++;
-	while (*(s2 + len_s2))
-		len_s2++;
+	if (s1 != 0)
+	{
+		while (*(s1 + len_s1))
+			len_s1++;
+	}
+	if (s2 != 0)
+	{
+		while (*(s2 + len_s2))
+			len_s2++;
+	}
 	p = malloc(len_s1 + len_s2 + 1);
-	if (!p)
+	if (p == 0)
 		return (0);
 	while (i < len_s1)
 	{
