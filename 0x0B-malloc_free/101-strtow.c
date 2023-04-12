@@ -4,7 +4,7 @@
  * @str: String
  * Return: Integer
  */
-char **strtow(char *str);
+char **strtow(char *str)
 {
 	char **p;
 
