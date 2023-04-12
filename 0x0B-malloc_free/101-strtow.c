@@ -6,5 +6,5 @@
  */
 char **strtow(char *str);
 {
-	
+	return (str);
 }
