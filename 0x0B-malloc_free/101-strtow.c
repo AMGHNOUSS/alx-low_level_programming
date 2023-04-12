@@ -6,5 +6,7 @@
  */
 char **strtow(char *str);
 {
-	return (str);
+	char **p;
+
+	return (p);
 }
