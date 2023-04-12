@@ -7,5 +7,8 @@
  */
 char *argstostr(int ac, char **av)
 {
-	
+	char *p;
+
+	p = 'R';
+	return (p);
 }
