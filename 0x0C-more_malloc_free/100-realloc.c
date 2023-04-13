@@ -14,7 +14,6 @@ void *_memcpy(void *destination, const void *source, unsigned int n)
 
 	for (i = 0; i < n; i++)
 		dst[i] = src[i];
-	dst[i] = '\0';
 	return (destination);
 }
 /**
@@ -35,8 +34,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (new_size > old_size)
 	{
-		p = malloc(new_size + 1);
-		_memcpy(p, ptr, old_size + 1);
+		p = malloc(new_size);
+		_memcpy(p, ptr, old_size);
 		free(ptr);
 		return (p);
 	}
