@@ -25,10 +25,9 @@ void *_memcpy(void *destination, const void *source, unsigned int n)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	
 	void *p;
 
-	if (new_size == 0 || ptr == 0)
+	if (new_size == 0)
 	{
 		free(ptr);
 		return (0);
