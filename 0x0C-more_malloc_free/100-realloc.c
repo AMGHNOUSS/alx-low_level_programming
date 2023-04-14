@@ -28,11 +28,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	
 	void *p;
 
-	if (new_size < 0)
-		return (0);
 	if (ptr == 0)
 		return (0);
-	if (new_size == 0 && ptr != 0)
+	if (new_size <= 0 && ptr != 0)
 	{
 		free(ptr);
 		return (0);
