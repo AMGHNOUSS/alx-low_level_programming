@@ -1,20 +1,5 @@
 #include <stdlib.h>
 /**
- * _memcpy - copy string
- * @destination: char
- * @source: Char
- * @n:Integer
- * Return: string
- */
-void *_memcpy(void *destination, const void *source, unsigned int n)
-{
-	char *dst = (char *)destination;
-	const char *src = (const char *)source;
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-		dst[
-/**
  * _realloc - reallocates a memory block using malloc and free.
  * @new_size: Integer
  * @old_size: Integer
