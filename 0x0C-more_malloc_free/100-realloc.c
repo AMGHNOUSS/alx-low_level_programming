@@ -13,9 +13,7 @@ void *_memcpy(void *destination, const void *source, unsigned int n)
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-		dst[i] = src[i];
-	return (destination);
-}
+		dst[
 /**
  * _realloc - reallocates a memory block using malloc and free.
  * @new_size: Integer
@@ -27,7 +25,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *p;
 
-	if (new_size == 0)
+	if (new_size == 0 && ptr != 0)
 	{
 		free(ptr);
 		return (0);
@@ -35,20 +33,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size > old_size)
 	{
 		p = malloc(new_size);
-		_memcpy(p, ptr, old_size);
 		free(ptr);
 		return (p);
 	}
-	else if (new_size < old_size)
+	if (ptr == 0)
 	{
-		p = malloc(new_size);
-		_memcpy(p, ptr, new_size);
+	p = malloc(new_size);
 		free(ptr);
 		return (p);
 	}
-	else if (new_size == old_size)
-	{
-		return (ptr);
-	}
+	free(ptr);
 	return (ptr);
 }
