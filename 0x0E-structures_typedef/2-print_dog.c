@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- *print_dog - Print struct dog.
- *@d: Type of dog
- *Return: 0 or  Printing
+ * print_dog - Print Info for dog
+ * @d: Variable with the type dog
+ * return: 0 or Nothings
  */
 void print_dog(struct dog *d)
 {
