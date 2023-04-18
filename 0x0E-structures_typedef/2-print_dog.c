@@ -3,7 +3,7 @@
 /**
  * print_dog - Print struct dog.
  * @d: Type of dog
- * Retunr: void.
+ * Return: void.
  */
 void print_dog(struct dog *d)
 {
