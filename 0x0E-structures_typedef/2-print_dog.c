@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * print_dog- Print struct dog.
+ * print_dog - Print struct dog.
  * @d: Type of dog
  * Retunr: void.
  */
