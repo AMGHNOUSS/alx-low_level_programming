@@ -2,10 +2,10 @@
 #include <stdlib.h>
 /**
  * new_dog - Create a new dog.
- * name: String
- * age: float
- * owner: string
- * return: dog
+ * @name: String
+ * @age: float
+ * @owner: string
+ * Return: Type of dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
