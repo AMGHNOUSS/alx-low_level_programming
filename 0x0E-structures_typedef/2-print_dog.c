@@ -1,10 +1,10 @@
 #include "dog.h"
 #include <stdio.h>
 /**
-*print_dog - Print struct dog.
-*@d: Type of dog
-*Return: 0 or  Printing
-*/
+ *print_dog - Print struct dog.
+ *@d: Type of dog
+ *Return: 0 or  Printing
+ */
 void print_dog(struct dog *d)
 {
 	if (d == 0)
