@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 	}
 	if (!(get_op_func(argv[2])))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
 	if (b == 0 && (*op == '/' || *op == '%'))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
 	printf("%d\n", get_op_func(op)(a, b));
