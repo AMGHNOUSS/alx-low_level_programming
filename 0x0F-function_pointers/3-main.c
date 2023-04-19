@@ -12,20 +12,20 @@ int main(int argc, char *argv[])
 	int a, b;
 	char *op;
 
-	op = argv[2];
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (!(get_op_func(argv[2])))
+	op = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (b == 0 && (*op == '/' || *op == '%'))
+	if ((b == 0) && (*op == '/' || *op == '%'))
 	{
 		printf("Error\n");
 		exit(100);
