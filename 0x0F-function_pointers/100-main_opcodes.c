@@ -9,6 +9,8 @@
 int main(int argc, char *argv[])
 {
 	int a, i;
+	int (*address)(int, char **) = main;
+	unsigned char opc;
 
 	if (argc != 2)
 	{
@@ -23,10 +25,13 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < a; i++)
 	{
-		printf("%.2hhx", argv[0][i]);
+		opc = *(unsigned char *)address;
+
+		printf("%.2x", opc);
 		if (i == a - 1)
 			break;
 		printf(" ");
+		address++;
 	}
 	printf("\n");
 	return (0);
