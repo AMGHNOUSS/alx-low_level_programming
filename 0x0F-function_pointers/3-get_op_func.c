@@ -6,8 +6,6 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	if (!s)
-		return (0);
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -18,6 +16,8 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	while (ops[i].op != 0)
 	{
