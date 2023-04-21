@@ -3,7 +3,12 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-
+/**
+ * struct printe - structure for printer
+ * @print: function poointer
+ * @symbol: String
+ * Description: struct
+ */
 typedef struct printer
 {
 char *symbol;
