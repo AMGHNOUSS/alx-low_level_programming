@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * struct printe - structure for printer
+ * struct printer - structure for printer
  * @print: function poointer
  * @symbol: String
  * Description: struct
