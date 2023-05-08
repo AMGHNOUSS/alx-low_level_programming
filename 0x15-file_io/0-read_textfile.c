@@ -7,14 +7,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
 	char *c;
-	ssize_t sz, wr;
+	ssize_t fd, sz, wr;
 
-	if (filename == NULL)
+	if (!filename)
 		return (0);
 	c = (char *)malloc(letters);
-	if (c)
+	if (!c)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	sz = read(fd, c, letters);
