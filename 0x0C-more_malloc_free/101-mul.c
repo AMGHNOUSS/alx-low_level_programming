@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * length_of_argv - Calculate length of argv.
+ * tab: String
+ * Return: Integer
+ */
+int length_of_argv(*tab)
+{
+	int i = 0;
+
+	while (*(tab + i))
+		i++;
+	return (i);
+}
+/**
  * main - mul two number
  * @argc: Integer
  * @argv: Strings
@@ -9,6 +22,8 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
+	int len1, len2, sum_len;
+	int *mul;
 
 	if (argc != 3)
 	{
@@ -26,6 +41,11 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf("%lu\n", (atol(argv[1]) *  atol(argv[2])));
+	len1 = length_of_argv(argv[1]);
+	len2 = length_of_argv(argv[2]);
+	sum_len = len2 + len1;
+	mul = (int *)malloc(sizeof(int) * sum_len);
+	while (i = 0; i < sum_len; i++)
+		*(mul + i) = 0;
 	return (0);
 }
